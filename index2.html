@@ -79,9 +79,11 @@
             <ul class="steps_name_box">
                 <li  class="st_name step_one active">Выбранный план</li>
                 <li class="st_name step_two">Паспорт проекта</li>
-                <li class="st_name step_three">Чек Лист</li>
+                <li class="st_name step_three">Паспорт проекта</li>
+                <li class="st_name step_four">Чек Лист</li>
 
             </ul>
+
 
 
             <ul class="step_btn_wrap clearfix">
@@ -90,14 +92,20 @@
                     <div class="step_title">Шаг</div>
                     <div class="span_circle">1</div>
                 </li>
-                <li  data-step="step_two" class="step_link">
+                <li data-step="step_two" class="step_link">
                     <div class="step_title">Шаг</div>
                     <div class="span_circle">2</div>
                 </li>
-                <li  data-step="step_three" class="step_link">
+                <li data-step="step_three" class="step_link">
                     <div class="step_title">Шаг</div>
                     <div class="span_circle">3</div>
                 </li>
+                <li data-step="step_four" class="step_link">
+                    <div class="step_title">Шаг</div>
+                    <div class="span_circle">4</div>
+                </li>
+
+
 
             </ul>
         </div>
@@ -109,7 +117,7 @@
 
 
 
-            <div class="tab_item active percent_select_plan step_one clearfix" id="percent_select_plan" >
+            <div class="tab_item active selected_plan clearfix step_one" id="selected_plan">
                 <h2 class="h_two block_title">Описание плана</h2>
 
                 <div class="tab_txt">
@@ -157,32 +165,43 @@
 
 
                 </div>
-
             </div>
 
-            <div class="tab_item passport_plan step_two clearfix" id="passport_plan">
+            <div class="tab_item active project_plan step_two clearfix" id="project_plan">
+                <div class="proj_plan_top clearfix">
 
-                <div class="passport_text">
 
-                    <p>С учетом сложившейся международной обстановки, высокое качество позиционных исследований требует
-                        анализа глубокомысленных рассуждений. В своем стремлении улучшить пользовательский опыт мы
-                        упускаем, что ключевые особенности структуры проекта превращены в посмешище, хотя само их
-                        существование приносит несомненную пользу обществу. Некоторые особенности внутренней политики
-                        разоблачены. Предварительные выводы неутешительны: консультация с широким активом требует
-                        анализа как самодостаточных, так и внешне зависимых концептуальных решений. Некоторые
-                        особенности внутренней политики могут быть подвергнуты целой серии независимых исследований.
-                        Базовый вектор развития прекрасно подходит для реализации форм воздействия.</p>
-                    <p>Предварительные выводы неутешительны: высокое качество позиционных исследований играет важную
-                        роль в формировании вывода текущих активов. В своем стремлении улучшить пользовательский опыт мы
-                        упускаем, что сделанные на базе интернет-аналитики выводы неоднозначны и будут своевременно
-                        верифицированы.</p>
+                    <div class="image_bg"></div>
+                    <div class="project_plan_txt">
+                        <div class="project_plan_title">Мудрый гриб</div>
+                        <p>С учетом сложившейся международной обстановки, высокое качество позиционных исследований
+                            требует анализа глубокомысленных рассуждений. В своем стремлении улучшить пользовательский
+                            опыт мы упускаем, что ключевые особенности структуры проекта превращены в посмешище, хотя
+                            само их существование приносит несомненную пользу обществу. Некоторые особенности внутренней
+                            политики разоблачены. Предварительные выводы неутешительны: консультация с широким активом
+                            требует анализа как самодостаточных, так и внешне зависимых концептуальных решений.
+                            Некоторые особенности внутренней политики могут быть подвергнуты целой серии независимых
+                            исследований. Базовый вектор развития прекрасно подходит для реализации форм
+                            воздействия.</p>
+                        <p>Предварительные выводы неутешительны: высокое качество позиционных исследований играет важную
+                            роль в формировании вывода текущих активов. В своем стремлении улучшить пользовательский
+                            опыт мы упускаем, что сделанные на базе интернет-аналитики выводы неоднозначны и будут
+                            своевременно верифицированы.</p>
+                    </div>
+                </div>
+                <div class="project_subtitle">В зависимости от готовности проекта определяется минимальная сумма
+                    вложения
+                </div>
+
+
+                <div class="project_banner one">
 
                 </div>
 
-                <div class="passport_title">Калькулятор прибыли</div>
+                <div class="project_calc">Калькулятор прибыли</div>
+                <div class="project_scale"></div>
 
-
-                <div class="passport_cal_wrap">
+                <div class="project_cal_wrap">
 
 
                     <div class="pass_inpt_wrap">
@@ -208,8 +227,8 @@
 
 
                 </div>
-                <div class="pass_sub_title">Ваше рещение</div>
-                <div class="passport_cal_wrap decision">
+                <div class="project_sub_title">Ваше решение</div>
+                <div class="project_cal_wrap decision">
 
                     <div class="pass_inpt_wrap">
                         <div class="pass_inpt_title">Ваша сумма Вложения</div>
@@ -221,14 +240,14 @@
                 </div>
             </div>
 
-            <div class="tab_item percentage_plan step_three clearfix" id="percentage_plan">
+            <div class="tab_item active check_list step_three clearfix" id="check_list">
 
                 <div class="image_bg"></div>
 
 
                 <div class="perent_text_wrap">
 
-                    <h2 class="h_two block_title">Процентный план</h2>
+                    <h2 class="h_two block_title">Мудрый гриб</h2>
 
                     <div class="tab_txt">
                         <p> С учетом сложившейся международной обстановки, высокое качество позиционных исследований
@@ -259,12 +278,10 @@
                         <div class="invest_data">175 000</div>
                     </div>
 
-                    <div class="percent_invest_block clearfix">
-                        <div class="invest_caption">ДОХОДНОСТЬ В ГОД</div>
-                        <div class="invest_data">28 00</div>
-                    </div>
+
 
                     <div class="percent_agree">
+                        <div class="check_condition">Проект запускается при готовности 100%</div>
                         <div class="agree_input"></div>
                         <div class="agree_self">Я согласен</div>
                     </div>
@@ -272,7 +289,7 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="percent_payment clearfix">
-                    <div class="pay_title">Выберите способ оплаты</div>
+                    <div class="pay_title">Выберите способ пополнения</div>
 
                     <div class="percent_pay_wrap">
                         <div class="image_pay master"></div>
@@ -282,6 +299,125 @@
                     </div>
                 </div>
             </div>
+
+            <div class="tab_item active selected_project step_four clearfix" id="selected_project">
+
+                <div class="filter_box clearfix">
+
+                    <div class="project_fltr_wrap">
+
+
+                        <div class="project_filter">
+
+                            <div class="project_active">
+                                <div class="pro_inpt"></div>
+                                <div class="pro_title">Активные проекты</div>
+                            </div>
+                            <div class="project_expect">
+                                <div class="pro_inpt"></div>
+                                <div class="pro_title">Ожидаемые проекты</div>
+                            </div>
+
+                        </div>
+
+                        <div class="alpha_wrap">
+                            <div class="alpha_title">Поиск по алфавиту</div>
+
+                            <div class="alpha_letters">
+                                <a class="letter">а</a>
+                                <a class="letter">б</a>
+                                <a class="letter">в</a>
+                                <a class="letter">г</a>
+                                <a class="letter">д</a>
+                                <a class="letter">е</a>
+                                <a class="letter">ё</a>
+                                <a class="letter">ж</a>
+                                <a class="letter">з</a>
+                                <a class="letter">и</a>
+                                <a class="letter">й</a>
+                                <a class="letter">к</a>
+                                <a class="letter">л</a>
+                                <a class="letter active">м</a>
+                                <a class="letter">н</a>
+                                <a class="letter">о</a>
+                                <a class="letter">п</a>
+                                <a class="letter">р</a>
+                                <a class="letter">с</a>
+                                <a class="letter">т</a>
+                                <a class="letter">у</a>
+                                <a class="letter">ф</a>
+                                <a class="letter">х</a>
+                                <a class="letter">ц</a>
+                                <a class="letter">ч</a>
+                                <a class="letter">ш</a>
+                                <a class="letter">щ</a>
+                                <a class="letter">ъ</a>
+                                <a class="letter">ы</a>
+                                <a class="letter">ь</a>
+                                <a class="letter">э</a>
+                                <a class="letter">ю</a>
+                                <a class="letter">я</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project_categ clearfix">
+
+                        <div class="proj_item">
+                            <div class="inner_wrap"><img src="images/mash1.png" alt="">
+                                <a class="proj_title">Мудрый грип</a>
+                            </div>
+                        </div>
+                        <div class="proj_item">
+                            <div class="inner_wrap"><img src="images/mash2.png" alt="">
+                                <a class="proj_title">Наглый помидор</a>
+                            </div>
+                        </div>
+                        <div class="proj_item">
+                            <div class="inner_wrap"><img src="images/mash3.png" alt="">
+                                <a class="proj_title">Индейка злодейка</a>
+                            </div>
+                        </div>
+                        <div class="proj_item">
+                            <div class="inner_wrap"><img src="images/mash4.png" alt="">
+                                <a class="proj_title">Сама себе зелень</a>
+                            </div>
+                        </div>
+                        <div class="proj_item">
+                            <div class="inner_wrap"><img src="images/mash5.png" alt="">
+                                <a class="proj_title">Рулет мясоед</a>
+                            </div>
+                        </div>
+                        <div class="proj_item carp">
+                            <div class="inner_wrap"><img src="images/mash6.png" alt="">
+                                <a class="proj_title">Хитрый карп</a>
+                            </div>
+                        </div>
+                        <div class="proj_item">
+                            <div class="inner_wrap"><img src="images/mash7.png" alt="">
+                                <a class="proj_title">Пипец перец</a>
+                            </div>
+                        </div>
+                        <div class="proj_item">
+                            <div class="inner_wrap"><img src="images/mash8.png" alt="">
+                                <a class="proj_title">Утка не на шутку</a>
+                            </div>
+                        </div>
+                        <div class="proj_item">
+                            <div class="inner_wrap"><img src="images/mash9.png" alt="">
+                                <a class="proj_title">Гусь ещё тот</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
 
         </div>

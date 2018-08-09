@@ -158,6 +158,12 @@ header .logo {
     height: 390px;
 }
 
+.tab_item{
+    display: none;
+}
+.tab_item.active{
+    display: block;
+}
 /**********************steps**********************/
 .step_btn_wrap > li {
     display: inline-block;
@@ -183,8 +189,12 @@ header .logo {
     min-width: 220px;
     font-size: 23px;
     color: #796513;
+    display: none;
+    font-weight: bold;
 }
-
+.steps_name_box .st_name.active{
+    display: block;
+}
 .step_btn_wrap > li:first-child {
     padding-left: 0;
 }
@@ -203,7 +213,7 @@ header .logo {
     display: inline-block;
     width: 35px;
     height: 35px;
-
+    cursor: pointer;
     background-color: #999999;
     line-height: 35px;
     text-align: center;
@@ -266,7 +276,7 @@ header .logo {
     background-repeat: no-repeat;
 }
 
-.percentage_plan .image_bg {
+.percentage_plan .image_bg,.check_list .image_bg {
     width: 43%;
     float: left;
 }
@@ -336,7 +346,7 @@ header .logo {
     border-radius: 3px;
 }
 
-.percent_agree {
+.percent_agree{
     display: table;
     margin: auto 5px auto auto;
 }
@@ -374,8 +384,9 @@ header .logo {
     cursor: pointer;
     border: 1px solid transparent;
     transition: all 0.2s linear;
-
+    box-sizing: border-box;
 }
+
 
 .image_pay:hover {
     border: 1px solid darkred;
@@ -395,6 +406,24 @@ header .logo {
     float: right;
     background-image: url(images/paypal.png);
 }
+
+/**/
+
+.image_pay.master {
+    float: left;
+    background-image: url(images/master_clr.png);
+
+}
+
+.image_pay.yandex {
+    background-image: url(images/yndx_clr.png);
+}
+
+.image_pay.paypal {
+    float: right;
+    background-image: url(images/paypal_clr.png);
+}
+/**/
 
 .project_btn {
     background-color: #796513;
@@ -906,6 +935,26 @@ header .logo {
 }
 .about_content{
     column-count: 2;
+}
+.check_list .percent_agree{
+    margin-top: 15px;
+}
+.check_condition{
+    float: left;
+    transform: translateX(-50%);
+    color: #a7a7a7;
+    font-size: 21px;
+    margin-top: 5px;
+}
+#check_list .image_bg {
+    position: relative;
+    top: -15px;
+    width: 320px;
+    height: 460px;
+    background-image: url(images/wise_mash.png);
+    background-size: 98%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 @media screen and (max-width: 1024px) {
     .wrap {
